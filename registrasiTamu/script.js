@@ -28,5 +28,5 @@ document.getElementById("guestForm").addEventListener("submit", function (e) {
 function showMessage(text, type) {
   const messageDiv = document.getElementById("message");
   messageDiv.textContent = text;
-  messageDiv.className = type; // 'error' atau 'success' (bisa ditambah di CSS)
+  messageDiv.className = type; // 'error' atau 'success'
 }

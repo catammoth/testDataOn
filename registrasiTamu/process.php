@@ -28,7 +28,7 @@ if (!isset($_FILES['id_card_image']) || $_FILES['id_card_image']['error'] !== UP
     die("Error: File ID Card harus diupload");
 }
 
-// 4. Koneksi database (sama seperti sebelumnya)
+// 4. Koneksi database
 $conn = new mysqli('localhost', 'root', '', 'guest_registration');
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
